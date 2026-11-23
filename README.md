@@ -2,7 +2,7 @@
 
 A responsive, single-user task management dashboard built with **React + Vite** and **Tailwind CSS** based on the FocusBoard Figma design.
 
-- **Live Demo:** _Add Vercel URL here_
+- **Live Demo:** https://focus-board-o7mr.vercel.app/
 - **GitHub Repository:** https://github.com/aryan0142/FocusBoard
 
 ## Features
