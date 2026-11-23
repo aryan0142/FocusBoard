@@ -2,7 +2,8 @@
 
 A responsive, single-user task management dashboard built with **React + Vite** and **Tailwind CSS** based on the FocusBoard Figma design.
 
-- **Live Demo:** https://your-vercel-link.vercel.app
+- **Live Demo:** _Add Vercel URL here_
+- **GitHub Repository:** https://github.com/aryan0142/FocusBoard
 
 ## Features
 
@@ -21,3 +22,25 @@ This project uses **React Hooks (`useState` and `useEffect`) lifted to `App.jsx`
 - **Lazy Initialization:** `useState(() => ...)` reads `localStorage` synchronously once on initial mount with `try/catch` and array validation, ensuring saved user edits are never overwritten by sample data.
 - **Derived Values:** Statistics (`totalTasks`, `inProgressCount`, `completedCount`, `completionRate`) and `filteredTasks` are computed during render rather than duplicated in state, eliminating sync bugs.
 - **Immutable Updates:** All add, edit, toggle, and delete operations use `.map()`, `.filter()`, and spread syntax without mutating existing state.
+
+
+## Local Setup
+
+```bash
+git clone https://github.com/aryan0142/FocusBoard.git
+cd FocusBoard
+npm install
+npm run dev
+```
+
+To create a production build:
+
+```bash
+npm run build
+npm run preview
+```
+
+## Scope Notes & Limitations
+
+- **Frontend-only:** Uses browser `localStorage` for persistence; no backend API or authentication is included.
+- **Placeholder Navigation Items:** `Calendar`, `Settings`, and the user profile menu (`JD`) are visual navigation placeholders per the assignment scope, while `Overview` and `My tasks` display the active dashboard workflow.
